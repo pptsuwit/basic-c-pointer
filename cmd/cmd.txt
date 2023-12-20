@@ -1,0 +1,5 @@
+#compile
+gcc.exe .\[file_name].c -o [file_name].exe
+
+run 
+.\[file_name].exe
