@@ -10,27 +10,27 @@ void editValue(int *value){
 int main()
 {
     //#pointer is
-    int a,b,c;
-    int* pointer1;
-    int * pointer2; 
-    int *pointer3;
+    // int a,b,c;
+    // int* pointer1;
+    // int * pointer2; 
+    // int *pointer3;
 
-    int x,y,z,*ptr,* ptr2;
+    // int x,y,z,*ptr,* ptr2;
     
-    printf("a : %p | %d\n", &a, a);
-    printf("b : %p | %d\n", &b, b);
-    printf("c : %p | %d\n", &c, c);
-    printf("pointer1 : %p | %p\n", &pointer1, pointer1);
-    printf("pointer2 : %p | %p\n", &pointer2, pointer2);
-    printf("pointer3 : %p | %p\n", &pointer3, pointer3);
+    // printf("a : %p | %d\n", &a, a);
+    // printf("b : %p | %d\n", &b, b);
+    // printf("c : %p | %d\n", &c, c);
+    // printf("pointer1 : %p | %p\n", &pointer1, pointer1);
+    // printf("pointer2 : %p | %p\n", &pointer2, pointer2);
+    // printf("pointer3 : %p | %p\n", &pointer3, pointer3);
 
-    // // #define pointer
-    // int variableInt = 100;
-    //// int *pointerInt = variableInt;
-    //int *pointer = &variableInt;
+    // #define pointer
+    int variableInt = 100;
+    // int *pointerInt = variableInt;
+    int *pointer = &variableInt;
 
-    // printf("variableInt : %p | %d\n", &variableInt,variableInt);
-    // printf("pointer : %p | %p | %d\n", &pointer,pointer,*pointer);
+    printf("variableInt : %p | %d\n", &variableInt,variableInt);
+    printf("pointer : %p | %p | %d\n", &pointer,pointer,*pointer);
 
     // variableInt = 200;
     // printf("After change variable \n");

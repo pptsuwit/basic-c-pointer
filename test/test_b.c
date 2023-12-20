@@ -10,15 +10,17 @@
 //     }
 //     return minimum;
 // }
-int findMinimumArray(int *pointer, int size){
-    int minimum = *pointer;
-    for(int i = 0; i < size; i++){
-
-        if(minimum >= *(pointer + i)){
-            minimum = *(pointer + i);
-        } 
-    }
-    return minimum;
+ int findMinimumArray(int *pointer, int size)
+ {
+     int minimum = *(pointer);
+     for (int i = 0; i < size; i++)
+     {
+         if (minimum >= *(pointer + i))
+         {
+             minimum = *(pointer + i);
+         }
+     }
+     return minimum;
 }
 void main()
 {
@@ -45,9 +47,9 @@ void main()
             min = *pointerArray[i];
         }
     }
-    printf("Minumum Array is : %d\n", min);
+    // printf("Minumum Array is : %d\n", min);
 
-    // printf("Minumum Array is : %d\n", findMinimumArray(array,  input));
+    printf("Minumum Array is : %d\n", findMinimumArray(array,  input));
 
     //with pointer
     // printf("Minumum Pointer is : %d\n", findMinimumPointer(pointerArray,  input));
